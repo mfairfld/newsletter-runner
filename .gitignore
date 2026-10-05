@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.onnx
+*.onnx.json
+*.wav
+bot_state.json
+.env
+.venv/
+__pycache__/
+*.onnx
+*.onnx.json
+*.wav
+bot_state.json
+.env

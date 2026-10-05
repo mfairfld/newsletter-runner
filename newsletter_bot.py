@@ -19,12 +19,12 @@ from google import genai
 from composio import Composio
 
 # ── Config ────────────────────────────────────────────────────────────────────
-load_dotenv()
+load_dotenv("/Users/AI-Lab/.config/newsletter/.env")
 
 GEMINI_KEY   = os.getenv("GEMINI_API_KEY")
 COMPOSIO_KEY = os.getenv("COMPOSIO_API_KEY")
 USER_ID      = os.getenv("COMPOSIO_USER_ID")
-STATE_FILE   = Path("bot_state.json")
+STATE_FILE = Path("/Users/AI-Lab/.local/state/newsletter/bot_state.json")
 
 # Primary "To" address — single email shown in the To field
 TO_ADDRESS = os.getenv("NEWSLETTER_TO", "")
@@ -352,10 +352,10 @@ def main():
         since = last_run
         print(f"   Last run: {since}")
     else:
-        since = (datetime.datetime.utcnow() - datetime.timedelta(hours=25)).strftime("%Y-%m-%dT%H:%M:%SZ")
+        since = (datetime.datetime.now(datetime.UTC) - datetime.timedelta(hours=25)).strftime("%Y-%m-%dT%H:%M:%SZ")
         print("   First run — fetching last 25 hours.")
 
-    this_run = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+    this_run = datetime.datetime.now(datetime.UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
 
     emails = fetch_newsletters(since)
     if not emails:
