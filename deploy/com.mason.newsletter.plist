@@ -7,7 +7,7 @@
     <key>ProgramArguments</key>
     <array>
         <string>/bin/sh</string>
-        <string>/Users/AI-Lab/bin/run-newsletter.sh</string>
+        <string>/Users/Workspace/bin/run-newsletter.sh</string>
     </array>
     <key>StartCalendarInterval</key>
     <dict>
@@ -17,11 +17,11 @@
         <integer>0</integer>
     </dict>
     <key>StandardOutPath</key>
-    <string>/Users/AI-Lab/Library/Logs/newsletter/launchd.out</string>
+    <string>/Users/Workspace/Library/Logs/newsletter/launchd.out</string>
     <key>StandardErrorPath</key>
-    <string>/Users/AI-Lab/Library/Logs/newsletter/launchd.err</string>
+    <string>/Users/Workspace/Library/Logs/newsletter/launchd.err</string>
     <key>WorkingDirectory</key>
-    <string>/Users/AI-Lab/code/newsletter</string>
+    <string>/Users/Workspace/code/newsletter</string>
     <key>RunAtLoad</key>
     <false/>
     <key>ProcessType</key>

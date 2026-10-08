@@ -19,12 +19,12 @@ from google import genai
 from composio import Composio
 
 # ── Config ────────────────────────────────────────────────────────────────────
-load_dotenv("/Users/AI-Lab/.config/newsletter/.env")
+load_dotenv("/Users/Workspace/.config/newsletter/.env")
 
 GEMINI_KEY   = os.getenv("GEMINI_API_KEY")
 COMPOSIO_KEY = os.getenv("COMPOSIO_API_KEY")
 USER_ID      = os.getenv("COMPOSIO_USER_ID")
-STATE_FILE = Path("/Users/AI-Lab/.local/state/newsletter/bot_state.json")
+STATE_FILE = Path("/Users/Workspace/.local/state/newsletter/bot_state.json")
 
 # Primary "To" address — single email shown in the To field
 TO_ADDRESS = os.getenv("NEWSLETTER_TO", "")

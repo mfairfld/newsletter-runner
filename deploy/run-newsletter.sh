@@ -4,9 +4,9 @@ set -u
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin
 export LANG=en_US.UTF-8
 
-REPO="/Users/AI-Lab/code/newsletter"
+REPO="/Users/Workspace/code/newsletter"
 PY="$REPO/.venv/bin/python"
-LOGDIR="/Users/AI-Lab/Library/Logs/newsletter"
+LOGDIR="/Users/Workspace/Library/Logs/newsletter"
 LOG="$LOGDIR/newsletter.log"
 MAXBYTES=1048576
 
